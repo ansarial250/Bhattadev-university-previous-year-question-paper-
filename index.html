@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhattadev University Question Papers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">BU</div>
+      <div>
+        <h1>Bhattadev University</h1>
+        <p>Question Paper Portal</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Find Previous Year Question Papers</h2>
+      <p>Search question papers by course, semester, subject or year.</p>
+      <input id="search" type="search" placeholder="🔎 Search e.g. Chemistry, 3rd Semester, 2025">
+    </section>
+
+    <section class="filters">
+      <select id="course">
+        <option value="">All Courses</option>
+        <option>BSc</option>
+        <option>BA</option>
+        <option>BCom</option>
+      </select>
+      <select id="semester">
+        <option value="">All Semesters</option>
+        <option>1st Semester</option>
+        <option>2nd Semester</option>
+        <option>3rd Semester</option>
+        <option>4th Semester</option>
+        <option>5th Semester</option>
+        <option>6th Semester</option>
+      </select>
+      <select id="year">
+        <option value="">All Years</option>
+        <option>2026</option>
+        <option>2025</option>
+        <option>2024</option>
+        <option>2023</option>
+      </select>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>Question Papers</h2>
+        <span id="count"></span>
+      </div>
+      <div id="papers" class="grid"></div>
+    </section>
+
+    <section class="admin">
+      <h2>➕ Add a Question Paper</h2>
+      <p class="note">This demo saves papers only in this browser. For a public website, connect it to online storage/database.</p>
+      <div class="form-grid">
+        <input id="subject" placeholder="Subject name">
+        <input id="paperCourse" placeholder="Course (e.g. BSc)">
+        <input id="paperSemester" placeholder="Semester (e.g. 3rd Semester)">
+        <input id="paperYear" type="number" placeholder="Year">
+        <input id="pdf" type="file" accept="application/pdf">
+      </div>
+      <button id="addBtn">Add Paper</button>
+    </section>
+  </main>
+
+  <footer>© 2026 Bhattadev University Question Paper Portal</footer>
+  <script src="script.js"></script>
+</body>
+</html>
