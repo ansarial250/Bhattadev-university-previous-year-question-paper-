@@ -3,25 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Bhattadev University Question Papers</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- Header -->
   <header>
     <div class="brand">
+
       <div class="logo">BU</div>
+
       <div>
         <h1>Bhattadev University</h1>
         <p>Question Paper Portal</p>
       </div>
+
     </div>
   </header>
 
+
+  <!-- Main -->
   <main>
-    
+
+    <!-- Search Section -->
+    <section class="hero">
+
+      <h2>Previous Year Question Papers</h2>
+
+      <p>
+        Find Bhattadev University question papers easily
+      </p>
+
+      <input
+        type="search"
+        id="search"
+        placeholder="Search subject, course, semester or year..."
+      >
+
+    </section>
+
+
+    <!-- Filters -->
+    <section class="filters">
+
+      <select id="course">
+        <option value="">All Courses</option>
+        <option value="BSc">B.Sc</option>
+        <option value="BA">B.A</option>
+        <option value="BCom">B.Com</option>
+        <option value="MA">M.A</option>
+        <option value="MSc">M.Sc</option>
+        <option value="MCom">M.Com</option>
+      </select>
+
+
+      <select id="semester">
+        <option value="">All Semesters</option>
+        <option value="1st Semester">1st Semester</option>
+        <option value="2nd Semester">2nd Semester</option>
+        <option value="3rd Semester">3rd Semester</option>
+        <option value="4th Semester">4th Semester</option>
+        <option value="5th Semester">5th Semester</option>
+        <option value="6th Semester">6th Semester</option>
+      </select>
+
+
+      <select id="year">
+        <option value="">All Years</option>
+        <option value="2026">2026</option>
+        <option value="2025">2025</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+      </select>
+
+    </section>
+
+
+    <!-- Question Papers -->
+    <div class="section-title">
+
+      <h2>Question Papers</h2>
+
+      <span id="count">0 papers</span>
+
+    </div>
+
+
+    <section id="papers" class="grid"></section>
+
+
+    <!-- Add Question Paper -->
+    <section class="admin">
+
+      <h2>Add Question Paper</h2>
+
+      <p class="note">
+        Add a PDF question paper. The uploaded paper will be stored
+        in this browser.
+      </p>
+
+
+      <div class="form-grid">
+
+        <input
+          type="text"
+          id="subject"
+          placeholder="Subject"
+        >
+
+
+        <input
+          type="text"
+          id="paperCourse"
+          placeholder="Course (e.g. BSc)"
+        >
+
+
+        <input
+          type="text"
+          id="paperSemester"
+          placeholder="Semester (e.g. 3rd Semester)"
+        >
+
+
+        <input
+          type="text"
+          id="paperYear"
+          placeholder="Year (e.g. 2026)"
+        >
+
+      </div>
+
+
+      <input
+        type="file"
+        id="pdf"
+        accept="application/pdf"
+      >
+
+      <br><br>
+
+      <button id="addBtn">
+        Add Question Paper
+      </button>
+
+    </section>
+
   </main>
 
-  <footer>© 2026 Bhattadev University Question Paper Portal</footer>
+
+  <!-- Footer -->
+  <footer>
+    ©️ 2026 Bhattadev University Question Paper Portal
+  </footer>
+
+
+  <!-- JavaScript -->
   <script src="script.js"></script>
+
 </body>
 </html>
