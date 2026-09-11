@@ -1,7 +1,8 @@
 const demoPapers=[
  {subject:"Organic Chemistry",course:"BSc",semester:"3rd Semester",year:"2025",url:""},
  {subject:"Physical Chemistry",course:"BSc",semester:"2nd Semester",year:"2024",url:""},
- {subject:"Inorganic Chemistry",course:"BSc",semester:"1st Semester",year:"2025",url:""}
+ {subject:"Inorganic Chemistry",course:"BSc",semester:"1st Semester",year:"2025",url:"Inorganic%201.pdf"}
+];
 ];
 
 let papers=JSON.parse(localStorage.getItem("buPapers")||"null")||demoPapers;
